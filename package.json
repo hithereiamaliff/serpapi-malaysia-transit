@@ -1,0 +1,21 @@
+{
+  "name": "serpapi-malaysia-transit",
+  "version": "1.0.0",
+  "description": "Find live buses near any place in Malaysia with SerpApi's Google Maps API and the Malaysia Transit API.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Aliff",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env index.js",
+    "mcp": "node --env-file-if-exists=.env mcp-server.js",
+    "test:mcp": "node --env-file-if-exists=.env test-mcp.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "serpapi": "^2.2.1",
+    "zod": "^4.6.7"
+  }
+}
